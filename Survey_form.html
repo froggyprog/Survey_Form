@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title"> Survey Form </h1>
+    <p id="description"> Thank you for your attention </p>
+  </header>
+  <main>
+    <form id="survey-form"> 
+      <label id="name-label" for="name"> Name</label><br>
+      <input type="text" name="name" required placeholder="Name" id="name"> <br>
+      <label id="email-label"  for="email"> Email </label> <br>
+      <input type="email" id="email" name="email" required placeholder="abracadabra@email.com"> <br>
+      <label id="number-label" for="age"> Age </label> <br> 
+      <input type="number" id="number" name="number" min="1" max="99" placeholder="1-99"> <br>
+      
+      <fieldset>
+      <legend> Choose your Fighter: </legend>
+    <input type="radio" value="Arthur Morgan" name="Fighter">
+    <label for="Arthur Morgan">Arthur Morgan</label><br>
+    <input type="radio" value="Dutch Van Der Linde" name="Fighter">
+    <label for="Dutch Van Der Linde">Dutch Van Der Linde</label><br>
+    <input type="radio" value="John Marston" name="Fighter">
+    <label for="John Marston">John Marston</label>
+</fieldset>
+
+   <label for="videogames">Favourite videogame:</label>
+<select name="videogames" id="dropdown">
+  <option value="Red Dead Redemption">Red Dead Redemption</option>
+  <option value="Fall Out 3">Fall Out 3</option>
+  <option value="Fable 2">Fable 2</option>
+  <option value="Half Life 3">Half Life 3</option>
+</select>
+      <br>
+      <p> Who is your friend </p>
+  <input type="checkbox" id="ideology" name="ideology" value="communist">
+      <label for="ideology"> Communist </label> <br>
+   <input type="checkbox" id="ideology" name="ideology" value="liberal">
+      <label for="ideology"> Liberal </label> <br>
+    <input type="checkbox" id="ideology" name="ideology" value="honeybunny">
+      <label for="ideology"> HoneyBunny </label>
+<br>
+<br>
+      <label for="dreams"> Tell me about your dreams, dear Android: </label> <br>
+      <textarea id="dreams" name="dreams">
+        Enter your comment here...
+      </textarea>
+      <br>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </main>
+</body>
+</html>
